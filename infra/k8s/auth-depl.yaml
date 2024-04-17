@@ -28,3 +28,7 @@ spec:
       protocol: TCP
       port: 3000
       targetPort: 3000
+
+
+
+# us.gcr.io/ticketing-dev-420413/auth
