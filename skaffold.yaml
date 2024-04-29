@@ -15,14 +15,14 @@ build:
         manual:
           - src: "src/**/*.ts"
             dest: .
-    # - image: swifty17/comments
-    #   context: comments
-    #   docker:
-    #     dockerfile: Dockerfile
-    #   sync:
-    #     manual:
-    #       - src: "*.js"
-    #         dest: .
+    - image: swifty17/client
+      context: client
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        manual:
+          - src: "**/*.js"
+            dest: .
     # - image: swifty17/event-bus
     #   context: event-bus
     #   docker:
